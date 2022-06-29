@@ -1,0 +1,189 @@
+.footer {
+    background-color:#2F303A;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    }
+    
+    .footer-conteiner {
+    display: flex;
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+    }
+    
+    .footer-logo-studio { 
+    font-family: 'Raleway';
+    font-style: normal;
+    color: #FFFFFF;
+    }
+    
+    .link-logo-footer {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.20;
+    }
+    
+    .logo-web-footer {
+    color: #2196F3
+    }
+    
+    .footer-list {
+    margin-top: 20px;
+    }
+    
+    .footer-soc-list {
+    margin-top: 20px;
+    }
+    
+    .footer-contact:not(:last-child) {
+    margin-bottom: 9px;
+    }
+    
+    .address {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.70;
+    color: #FFFFFF;
+    }
+    
+    .footer-soc {
+    justify-content: flex-start;
+    margin-top: 12px;
+    margin-left: 70px;
+    width: 80px;
+    height: 206;
+    }
+    
+    .footer-soc-title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.15;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    margin-top: 0px;
+    color: #FFFFFF
+    }
+    
+    .footer-soc-list {
+    display: flex;
+    }
+    
+    .footer-soc-item {
+    margin-right: 10px;
+    }
+    
+    /* .footer-soc-item:not(:last-child) {
+    margin-right: 0px;
+    } */
+    
+    .footer-soc-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    
+    .footer-soc-link:hover,
+    .footer-soc-link:focus {
+    background-color: var(--accent-color);
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    
+    .footer-submit {
+    justify-content: flex-start;
+    margin-top: 12px;
+    margin-left: 193px;
+    }
+    
+    .footer-submit-title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(16/14);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;    
+    color: #FFFFFF;
+    margin-bottom: 20px;
+    }
+    
+    .submit-wrap{
+    display: flex;
+    }
+    
+    .submit-input {
+    width: 358px;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    /* filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15)); */
+    border-radius: 4px;
+    background-color: transparent;
+    padding-left: 16px;
+    color: #FFFFFF;
+    outline: transparent;
+    }
+    
+    .submit-input:focus{
+    border-color: var(--accent-color);
+    }
+    
+    .submit-input::placeholder {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    }
+    
+    .submit-form {
+    margin-right: 12px;
+    }
+    
+    .btn-submit {
+    display: flex;
+    flex-direction: row-reverse;
+    font-family: 'Roboto';
+    font-style: normal;
+    color: #FFFFFF;
+    cursor: pointer;
+    border: none;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.90;
+    letter-spacing: 0.06em;
+    align-items: center;
+    justify-content: center;
+    background-color: #2196F3;
+    padding: 10px 28px;
+    border-radius: 4px;
+    transition-property: color, background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    
+    .btn-submit:hover, 
+    .btn-submit:focus {
+    background-color: #188CE8;
+    transition-property: color, background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    
+    .footer-submit-icon {
+    margin-left: 10px;
+    }
