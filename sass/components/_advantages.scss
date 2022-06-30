@@ -25,18 +25,17 @@
     
     .advantages-text-list:not(:last-child){
     margin-right: 30px;
-    }
-    
-    .advantages-text-list::before {
-    display: block;
-    content: "";
-    height: 120px;
-    background-size: 70px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: #F5F4FA;
-    margin-bottom: 19px;
-    /* outline: 1px solid red; */
+    &::before {
+        display: block;
+        content: "";
+        height: 120px;
+        background-size: 70px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: #F5F4FA;
+        margin-bottom: 19px;
+        /* outline: 1px solid red; */
+        }
     }
     
     .icon-antenna::before {

@@ -44,18 +44,15 @@
     cursor: pointer;
     }
     
-    
-    .modal-close-btn:hover .close-modal, 
-    .modal-close-btn:focus .close-modal {
+    .close-modal {
+    color: #000000;
+    .modal-close-btn:hover &, 
+    .modal-close-btn:focus & {
     fill: #2196F3;
     transition-property: fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
-    
-    
-    .close-modal {
-    color: #000000;
     }
     
     .is-hidden {
@@ -103,6 +100,9 @@
     padding-left: 42px;
     background-color: transparent;
     outline: transparent;
+    &:focus {
+        border-color: var(--accent-color);
+        }
     }
     
     .input-icon {
@@ -110,14 +110,9 @@
     left: 10px;
     top: 50%;
     transform: translateY(-50%);
-    }
-    
-    .modal-input:focus {
-    border-color: var(--accent-color);
-    }
-    
-    .modal-input:focus + .input-icon {
-    fill: var(--accent-color);
+    .modal-input:focus + & {
+        fill: var(--accent-color);
+        }
     }
     
     .modal-comment {
@@ -129,18 +124,17 @@
     padding-left: 21px;
     padding-top: 12px;
     outline: transparent;
-    }
-    
-    .modal-comment:focus {
-    border-color: var(--accent-color);
-    }
-    
-    .modal-comment::placeholder {
-    font-weight: 400;
-    font-size: 12px;
-    line-height: calc(14/12);
-    letter-spacing: 0.01em;   
-    color: rgba(117, 117, 117, 0.5);
+    &:focus {
+        border-color: var(--accent-color);
+        }
+        
+        &::placeholder {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: calc(14/12);
+        letter-spacing: 0.01em;   
+        color: rgba(117, 117, 117, 0.5);
+        }
     }
     
     .check-text {
@@ -160,12 +154,11 @@
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
+    .check-text &:hover {
+        text-decoration: none;
+        }
     }
-    
-    .check-text a:hover {
-    text-decoration: none;
-    }
-    
+
     .check-text span {
     width: 16px;
     height: 15px;
@@ -175,28 +168,27 @@
     align-items: center;
     justify-content: center;
     margin-right: 8px;
-    }
-    .input-check:focus + .check-text span {
-    border-color: var(--accent-color);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15); ;
+    .input-check:focus + .check-text & {
+        border-color: var(--accent-color);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15); ;
+        }
+        .input-check:checked + .check-text & {
+            background-color: var(--accent-color) ;
+            border: none;
+            }
     }
     
     .check-icon {
     fill: transparent;
+    &:focus {
+        border-color: var(--accent-color);
+        }
+        .input-check:checked + .check-text & {
+            fill: #FFFFFF ;
+            }
     }
     
-    .input-check:checked + .check-text span {
-    background-color: var(--accent-color) ;
-    border: none;
-    }
     
-    .input-check:checked + .check-text .check-icon {
-    fill: #FFFFFF ;
-    }
-    
-    .check-icon:focus {
-    border-color: var(--accent-color);
-    }
     
     .madal-send-btn {
     font-family: 'Roboto';
@@ -219,10 +211,8 @@
     transition-property: color, background-color, box-shadow;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    }
-    
-    .madal-send-btn:hover,
-    .madal-send-btn:focus {
+    &:hover,
+    &:focus {
     color: #FFFFFF;
     background-color: #188CE8;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -230,3 +220,6 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
+    }
+    
+    

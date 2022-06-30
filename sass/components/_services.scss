@@ -48,12 +48,13 @@
     transition-property: color, background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover {
+        color: #FFFFFF;
+        background-color: #188CE8;
+        transition-property:color, background-color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        }
     }
     
-    .services-btn:hover {
-    color: #FFFFFF;
-    background-color: #188CE8;
-    transition-property:color, background-color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    }
+    

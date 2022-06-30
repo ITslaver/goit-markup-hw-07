@@ -4,10 +4,11 @@
     
     .our-work-img {
     width: calc((100% - 60px) / 3);
+    &:not(:last-child){
+        margin-right: 30px;
+        }
     }
-    .our-work-img:not(:last-child){
-    margin-right: 30px;
-    }
+    
     
     .work-top-wrap {
     position: relative;

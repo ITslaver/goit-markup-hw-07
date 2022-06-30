@@ -7,28 +7,12 @@
     width: calc((100% - 60px) / 3);
     margin-right: 30px;
     margin-bottom: 30px;
-    }
-    
-    .posters-block:nth-child(3n) {
-    margin-right: 0;
-    }
-    
-    .posters-block:nth-child(n + 7) {
-    margin-bottom: 0;
-    }
-    
-    .posters-link:hover .posters-cover-text {
-    transform: translateY(0);
-    transition-property: transform;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    }
-    
-    .posters-link:focus .posters-cover-text {
-    transform: translateY(0);
-    transition-property: transform;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);   
+    &:nth-child(3n) {
+        margin-right: 0;
+        }
+        &:nth-child(n + 7) {
+            margin-bottom: 0;
+            }
     }
     
     .posters-top-wrap {
@@ -55,6 +39,19 @@
     transition-property: transform;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    .posters-link:hover & {
+        transform: translateY(0);
+        transition-property: transform;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .posters-link:focus & {
+        transform: translateY(0);
+        transition-property: transform;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);   
+        }
     }
     
     .posters-link {
@@ -62,10 +59,8 @@
     transition-property: box-shadow;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    }
-    
-    .posters-link:hover,
-    .posters-link:focus {
+    &:hover,
+    &:focus {
     box-shadow: 0px 1px 1px 
     rgba(0, 0, 0, 0.12), 0px 4px 4px 
     rgba(0, 0, 0, 0.06), 1px 4px 6px 
@@ -73,6 +68,7 @@
     transition-property: box-shadow;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
     }
     
     .posters-title {

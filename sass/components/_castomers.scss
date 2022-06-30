@@ -7,17 +7,15 @@
     width: calc((100% - 150px) / 6);
     display: flex;
     margin-right: 30px;
+    &:last-child {
+        margin-right: 0px; 
+        }
     }
-    
-    .castomers-item:last-child{
-    margin-right: 0px; 
-    }
-    
+
     .castomers-link {
     display: flex;
     align-items: center;
     justify-content: center;
-    /* width: 170px; */
     height: 92px;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
@@ -25,6 +23,13 @@
     transition-property: border-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover, 
+    &:focus {
+    border-color: var(--accent-color) ;
+    transition-property:color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
     }
     
     .castomers-icon {
@@ -32,20 +37,13 @@
     transition-property:fill, border-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    }
-    
-    .castomers-link:hover, 
-    .castomers-link:focus {
-    border-color: var(--accent-color) ;
-    transition-property:color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    }
-    
-    .castomers-link:hover .castomers-icon, 
-    .castomers-link:focus .castomers-icon {
+    .castomers-link:hover &, 
+    .castomers-link:focus & {
     fill:#2196F3 ;
     transition-property:fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
+    }
+    
+    

@@ -18,11 +18,12 @@
     
     .our-team-block {
     width: calc((100% - 90px) / 4);
+    &:not(:last-child){
+        margin-right: 30px;
+        }
     }
     
-    .our-team-block:not(:last-child){
-    margin-right: 30px;
-    }
+    
     
     .our-team-name {
     font-weight: 500;
@@ -46,13 +47,13 @@
     }
     
     .team-soc-item {
-    
     margin-right: 10px;
+    &:last-child {
+        margin-right: 0;
+        }
     }
     
-    .team-soc-item:last-child {
-    margin-right: 0;
-    }
+    
     
     .team-soc-link {
     display: flex;
@@ -72,20 +73,22 @@
     transition-property: fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    }
-    
-    .team-soc-link:hover,
-    .team-soc-link:focus {
+    &:hover,
+    &:focus {
     background-color: var(--accent-color);
     transition-property: background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
-    
-    .team-soc-link:hover .team-soc-icon,
-    .team-soc-link:focus .team-soc-icon {
+    .team-soc-link:hover &,
+    .team-soc-link:focus & {
     fill: #FFFFFF;
     transition-property: fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
+    }
+    
+    
+    
+    

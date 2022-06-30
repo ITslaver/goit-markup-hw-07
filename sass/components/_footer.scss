@@ -78,10 +78,6 @@
     margin-right: 10px;
     }
     
-    /* .footer-soc-item:not(:last-child) {
-    margin-right: 0px;
-    } */
-    
     .footer-soc-link {
     display: flex;
     align-items: center;
@@ -93,15 +89,16 @@
     transition-property: background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    }
-    
-    .footer-soc-link:hover,
-    .footer-soc-link:focus {
+    &:hover,
+    &:focus {
     background-color: var(--accent-color);
     transition-property: background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
+    
+    }
+    
     
     .footer-submit {
     justify-content: flex-start;
@@ -134,21 +131,22 @@
     padding-left: 16px;
     color: #FFFFFF;
     outline: transparent;
+    &:focus{
+        border-color: var(--accent-color);
+        }
+        
+        &::placeholder {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.25;
+        letter-spacing: 0.03em;
+        color: rgba(255, 255, 255, 0.6);
+        }
     }
     
-    .submit-input:focus{
-    border-color: var(--accent-color);
-    }
-    
-    .submit-input::placeholder {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.25;
-    letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 0.6);
-    }
+
     
     .submit-form {
     margin-right: 12px;
@@ -174,14 +172,13 @@
     transition-property: color, background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    }
-    
-    .btn-submit:hover, 
-    .btn-submit:focus {
+    &:hover, 
+    &:focus {
     background-color: #188CE8;
     transition-property: color, background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
     }
     
     .footer-submit-icon {

@@ -11,10 +11,8 @@
     transition-property: color, background-color, box-shadow;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    }
-    
-    .nav-btn:hover,
-    .nav-btn:focus {
+    &:hover,
+    &:focus {
     color: #FFFFFF;
     background-color: #2196F3;
     box-shadow: 0px 3px 1px 
@@ -25,7 +23,7 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);    
     }
-    
+    }
     
     .portfolio-nav-list {
     display: flex;
