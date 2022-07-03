@@ -4,7 +4,7 @@
     padding-bottom: 60px;
     }
     
-    .footer-conteiner {
+    .footer__conteiner {
     display: flex;
     width: 1200px;
     padding-left: 15px;
@@ -18,7 +18,7 @@
     color: #FFFFFF;
     }
     
-    .link-logo-footer {
+    .logo-footer {
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
@@ -26,11 +26,7 @@
     line-height: 1.20;
     }
     
-    .logo-web-footer {
-    color: #2196F3
-    }
-    
-    .footer-list {
+    .footer__list {
     margin-top: 20px;
     }
     

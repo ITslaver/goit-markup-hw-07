@@ -1,8 +1,8 @@
-.our-work-list {
+.our-work__list {
     display: flex;
     }
     
-    .our-work-img {
+    .our-work__img {
     width: calc((100% - 60px) / 3);
     &:not(:last-child){
         margin-right: 30px;

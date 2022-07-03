@@ -15,28 +15,28 @@
     margin: -1px;
     }
     
-    .advantages-list {
+    .advantages__list {
     display: flex;
     }
     
-    .advantages-text-list {
+    .advantages-text__list {
     width: calc((100% - 90px) / 4);
-    }
-    
-    .advantages-text-list:not(:last-child){
-    margin-right: 30px;
-    &::before {
-        display: block;
-        content: "";
-        height: 120px;
-        background-size: 70px;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-color: #F5F4FA;
-        margin-bottom: 19px;
-        /* outline: 1px solid red; */
+    &:not(:last-child){
+        margin-right: 30px;
         }
-    }
+        &::before {
+            display: block;
+            content: '';
+            height: 120px;
+            background-size: 70px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-color: #F5F4FA;
+            margin-bottom: 19px;
+            /* outline: 1px solid red; */
+            }
+
+        }
     
     .icon-antenna::before {
     background-image: url('../img/icon-antenna1.svg');
