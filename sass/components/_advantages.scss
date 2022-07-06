@@ -16,7 +16,7 @@
     }
     
     .advantages__list {
-    display: flex;
+    @include flexCenter ()
     }
     
     .advantages-text__list {

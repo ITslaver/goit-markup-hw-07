@@ -1,0 +1,37 @@
+.contact {
+    margin-left: auto;
+    }
+    
+    .contacts__list {
+    @include flexCenter ();
+    }
+    
+    .contacts:not(:last-child) {
+    margin-right: 50px;
+    }
+    
+    .contacts__link {
+    @include flexCenter ();
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.10;
+    letter-spacing: 0.02em;
+    color: #757575;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+    color: var(--accent-color);
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    }
+    
+    .contact__icon {
+    fill: currentColor;
+    margin-right: 10px;
+    }

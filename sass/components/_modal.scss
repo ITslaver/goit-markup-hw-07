@@ -37,9 +37,7 @@
     height: 30px;
     border: 1px solid rgba(0, 0, 0, 0.1);
     background-color: transparent;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flexCenter ();
     border-radius: 50%;
     cursor: pointer;
     }
@@ -143,9 +141,7 @@
     line-height: 1.71;
     letter-spacing: 0.03em;   
     color: #757575;
-    display: flex;
-    align-items: center;
-    margin-top: 25px;
+    @include flexCenter ();
     }
     
     .check-text a{
@@ -154,29 +150,30 @@
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    .check-text &:hover {
+    }
+
+    .check-text a:hover {
         text-decoration: none;
         }
-    }
 
     .check-text span {
     width: 16px;
     height: 15px;
     border-radius: 2px;
     border: 2px solid #212121;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flexCenter ();
     margin-right: 8px;
-    .input-check:focus + .check-text & {
+    }
+
+    .input-check:focus + .check-text span {
         border-color: var(--accent-color);
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15); ;
         }
-        .input-check:checked + .check-text & {
-            background-color: var(--accent-color) ;
-            border: none;
-            }
-    }
+
+    .input-check:checked + .check-text span {
+        background-color: var(--accent-color) ;
+        border: none;
+        }
     
     .check-icon {
     fill: transparent;
@@ -187,8 +184,6 @@
             fill: #FFFFFF ;
             }
     }
-    
-    
     
     .madal-send-btn {
     font-family: 'Roboto';
