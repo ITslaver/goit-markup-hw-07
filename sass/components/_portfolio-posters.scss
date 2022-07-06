@@ -21,9 +21,7 @@
     }
     
     .posters-cover-text {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flexCenter ();
     position: absolute;
     top: 0;
     font-size: 18px;

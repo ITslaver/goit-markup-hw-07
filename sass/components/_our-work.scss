@@ -1,5 +1,5 @@
 .our-work__list {
-    display: flex;
+    @include flexCenter ();
     }
     
     .our-work__img {
