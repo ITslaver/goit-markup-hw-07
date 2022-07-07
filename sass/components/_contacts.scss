@@ -1,4 +1,4 @@
-.contact {
+.contacts {
     margin-left: auto;
     }
     
@@ -6,12 +6,13 @@
     @include flexCenter ();
     }
     
-    .contacts:not(:last-child) {
+    .contacts__item:not(:last-child) {
     margin-right: 50px;
     }
     
     .contacts__link {
-    @include flexCenter ();
+    display: flex;
+    align-items: center;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
@@ -29,7 +30,16 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
+    &:hover,
+    &:focus {
+    color: var(--accent-color);
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
+    }
+    
+    
     
     .contact__icon {
     fill: currentColor;

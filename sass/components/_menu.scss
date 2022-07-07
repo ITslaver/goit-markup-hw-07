@@ -21,10 +21,6 @@
     border-radius: 4px;
     background-color: var(--accent-color);
     }
-
-    .menu__link--current {
-    color: var(--accent-color);
-    }
     
     .menu__link {
     padding-top: 32px;
@@ -45,4 +41,8 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
+    }
+
+    .menu__link--current {
+    color: var(--accent-color);
     }
